@@ -1,0 +1,9 @@
+{
+  "tx_hash": "0x127a8e1ff40beee2df0cc0471f551c52adcf7e30d44bd9fb10ee39de50de561e",
+  "block": 52605019,
+  "chain": "Base mainnet (chainId 8453)",
+  "registry": "0x49fEcA52bC634a9Ab773226D16619deC547794aa",
+  "status": "0x1 (success)",
+  "anchored_by": "0xDcc84E9798E8eB1b1b48A31B8f35e5AA7b83DBF4",
+  "signed_via": "giskard-signer (owner wallet, policy-gated, private key never touched by this session)"
+}

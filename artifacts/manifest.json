@@ -1,0 +1,58 @@
+{
+  "action_ref": "e33895af85cef60e1d9a73c85de1f080a6ca71ee927692e460939009fe48a154",
+  "anchor_chain": "Base mainnet (chainId 8453)",
+  "anchor_ref_bytes32": "0xe33895af85cef60e1d9a73c85de1f080a6ca71ee927692e460939009fe48a154",
+  "anchor_registry": "0x49fEcA52bC634a9Ab773226D16619deC547794aa",
+  "envelope": {
+    "action_ref": "e33895af85cef60e1d9a73c85de1f080a6ca71ee927692e460939009fe48a154",
+    "capability": "agents-market.assignment.submit",
+    "generated_at_utc": "2026-10-14T18:32:07.000Z",
+    "hash_algo": "sha256",
+    "packet_version": "1.0",
+    "params_digest": "d4831899b481ede1f5140e98e1808cd5e1e3cbb0812624e707aeb53bdd7269a7",
+    "preimage": {
+      "action_type": "nearai.agents_market.assignment.submit",
+      "agent_id": "worked-example.nearai-agents-market-action-ref-anchor",
+      "scope": "nearai:agents-market:v1/assignments/{id}/submit:assignment:018f3b2e-7a4d-7c91-9e2a-worked-example-0001:deliverable_sha256:a834c20296df97d5dcd21a34941c910ba018962a036b37242eefdf816cc0c7a9",
+      "timestamp": "2026-10-14T18:32:07.000Z"
+    },
+    "preimage_format": "jcs-rfc8785-v1",
+    "result_digest": "ba03dbd7272d574842a3414ea879b7bd1b616d39eb885dc30d2f8913e1e940c2"
+  },
+  "fixture_id": "nearai-agents-market-assignment-submit-worked-example",
+  "jcs_payload": "{\"action_type\":\"nearai.agents_market.assignment.submit\",\"agent_id\":\"worked-example.nearai-agents-market-action-ref-anchor\",\"scope\":\"nearai:agents-market:v1/assignments/{id}/submit:assignment:018f3b2e-7a4d-7c91-9e2a-worked-example-0001:deliverable_sha256:a834c20296df97d5dcd21a34941c910ba018962a036b37242eefdf816cc0c7a9\",\"timestamp\":\"2026-10-14T18:32:07.000Z\"}",
+  "params": {
+    "acceptanceWindowDays": 5,
+    "assignmentId": "018f3b2e-7a4d-7c91-9e2a-worked-example-0001",
+    "deliverableMarkdown": "# Deliverable: Q3 competitor pricing teardown\n\nSummary table + sourced notes for the 6 competitors in scope, as specified in the job brief. Full write-up is linked below; raw sheet attached as a file per the job's delivery instructions.\n",
+    "endpoint": "POST /v1/assignments/{id}/submit",
+    "escrowAmount": "25.000000000000",
+    "escrowToken": "USDC",
+    "files": [
+      "https://market.near.ai/files/WORKED-EXAMPLE-TOKEN/pricing-teardown.xlsx"
+    ],
+    "jobId": "018f3b2e-7a4d-7c91-9e2a-worked-example-job1",
+    "slaDeadlineAt": "2026-10-15T18:32:07.000Z",
+    "workerAgentId": "018f3b2e-7a4d-7c91-9e2a-worked-example-agnt"
+  },
+  "preimage": {
+    "action_type": "nearai.agents_market.assignment.submit",
+    "agent_id": "worked-example.nearai-agents-market-action-ref-anchor",
+    "scope": "nearai:agents-market:v1/assignments/{id}/submit:assignment:018f3b2e-7a4d-7c91-9e2a-worked-example-0001:deliverable_sha256:a834c20296df97d5dcd21a34941c910ba018962a036b37242eefdf816cc0c7a9",
+    "timestamp": "2026-10-14T18:32:07.000Z"
+  },
+  "provenance": "Synthetic worked example. Request/result shapes modeled on market.near.ai's own public documentation (/skill/SKILL.md, /skill/reference/agent-api.md, /openapi.json): SubmitRequest (deliverableMarkdown, files) and DeliverableVersionView (version, deliverableHash, deliverableUrl, files, senderAgentId, submittedAt). NOT captured from a running worker agent, a real marketplace account, or any real assignment, job, or escrow payment. assignmentId, jobId, workerAgentId, and the file URL are synthetic placeholders. deliverableHash here is COMPUTED BY THIS SCRIPT as SHA-256 of deliverable_markdown, following the one sentence market.near.ai's own docs give it (\"stored and hashed by the platform\") -- the platform's exact algorithm, encoding, and whether files are covered are not publicly specified; see PROVENANCE.md. No claim that NEAR AI or agents-market emits action_ref today, and no claim of integration, adoption, or endorsement by NEAR AI.",
+  "result": {
+    "deliverableHash": "a834c20296df97d5dcd21a34941c910ba018962a036b37242eefdf816cc0c7a9",
+    "deliverableUrl": null,
+    "files": [
+      {
+        "fileUrl": "https://market.near.ai/files/WORKED-EXAMPLE-TOKEN/pricing-teardown.xlsx"
+      }
+    ],
+    "senderAgentId": "018f3b2e-7a4d-7c91-9e2a-worked-example-agnt",
+    "submittedAt": "2026-10-14T18:32:07.000Z",
+    "version": 1
+  },
+  "spec": "action-ref-v1 (argentum-core, docs/spec/action-ref.md)"
+}
